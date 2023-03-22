@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="calculator">
         <form>
             <div class="display">
-                <input type="text" name="display">
+                <input type="text" name="display" id="display">
             </div>
             <div>
                 <input type="button" value="AC" onclick="display.value = '' " class="operator">
@@ -40,7 +41,8 @@
                 <input type="button" value="+" onclick="display.value += '+' " class="operator">
             </div>
             <div>
-                <input type="button" value="00" onclick="display.value += '00' ">
+                <input type="button" value="SV" id="save-button">
+                <!-- <input type="button" value="SV" onclick="display.value += '00' "> --> <!-- save function to save whats in display -->
                 <input type="button" value="0" onclick="display.value += '0' ">
                 <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
             </div>
