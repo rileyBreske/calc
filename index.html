@@ -9,7 +9,9 @@
     <title>Calculator</title>
 </head>
 <body>
-    
+
+<div class="main-container">
+
   <div class="container">
     <div class="calculator">
         <form>
@@ -42,13 +44,18 @@
             </div>
             <div>
                 <input type="button" value="SV" id="save-button">
-                <!-- <input type="button" value="SV" onclick="display.value += '00' "> --> <!-- save function to save whats in display -->
                 <input type="button" value="0" onclick="display.value += '0' ">
                 <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
             </div>
         </form>
     </div>
   </div>
+
+  <div id="right-div">
+
+  </div>
+
+</div>
 
 </body>
 </html>

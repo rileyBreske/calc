@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
-.container{
-  width: 100%;
+.main-container {
+  display: flex;
+}
+.container{ /*container for the calculator*/
+  width: 70%;
   height: 100vh;
-  background: #e3f9ff;
+  background: #adadad;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,3 +60,10 @@ form input.operator{
   background-color: #52caeb38;
 }
 
+#right-div { /*container for the output to the right of the calculator*/
+  width: 30%;
+  height: 100vh;
+  background-color: #9b9b9b;
+  position: absolute;
+  right: 0;
+}
