@@ -43,7 +43,7 @@
                 <input type="button" value="+" onclick="display.value += '+' " class="operator">
             </div>
             <div>
-                <input type="button" value="SV" onclick="output.value += display.value" id="save-button">
+                <input type="button" value="SV" onclick="output.value = display.value" id="save-button">
                 <input type="button" value="0" onclick="display.value += '0' ">
                 <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
             </div>
@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <div id="right-div">
+  <div class="right-div">
     <h2>Calculator</h2>
     <div class="sidebar1">
             <h3>Github</h3>
@@ -63,7 +63,7 @@
     </div>
     <div class="sidebar2 scroll">
             <h4>saved outputs:</h4>
-            <input type="text" name="output" id="output">
+            <input type="text" name="output" id="output"> <br>
             <input type="button" value="clear" onclick="output.value = '' " class="sidebarButton" id="lookup-button">
             <input type="button" value="google" onclick="openGoogleSearch()" class="sidebarButton">
     </div>
