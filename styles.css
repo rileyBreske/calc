@@ -9,7 +9,7 @@
   display: flex;
 }
 .container{ /*container for the calculator*/
-  width: 70%;
+  width: 60%;
   height: 100vh;
   background: #adadad;
   display: flex;
@@ -61,9 +61,27 @@ form input.operator{
 }
 
 #right-div { /*container for the output to the right of the calculator*/
-  width: 30%;
+  width: 40%;
   height: 100vh;
   background-color: #9b9b9b;
   position: absolute;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar1{
+  background: #777777;
+  width: 70%;
+  border-radius: 5px;
+  padding: 25px 50px 75px;
+}
+.sidebar2{
+  background: #777777;
+  width: 70%;
+  border-radius: 5px;
+  padding: 25px 50px 75px;
+  margin-top: 20px;
 }
