@@ -90,3 +90,16 @@ form input.operator{
   overflow-y: scroll;
   display: block;
 }
+
+form .output input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form .output {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
