@@ -76,12 +76,17 @@ form input.operator{
   background: #777777;
   width: 70%;
   border-radius: 5px;
-  padding: 25px 50px 75px;
+  padding: 25px 25px 25px;
+  text-align: center;
 }
+
 .sidebar2{
   background: #777777;
   width: 70%;
+  height: 20%;
   border-radius: 5px;
-  padding: 25px 50px 75px;
+  padding: 20px 15px 5px;
   margin-top: 20px;
+  overflow-y: scroll;
+  display: block;
 }
