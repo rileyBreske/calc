@@ -21,3 +21,11 @@ function openGoogleSearch() {
     window.open(url);
 }
 
+function onClickEvent() {
+    const el = document.createElement("p");
+    el.innerText = output.value;
+    document.querySelector('.saved-history').appendChild(el);
+}
+
+document.querySelectorAll('input').onclick = onClickEvent;
+
