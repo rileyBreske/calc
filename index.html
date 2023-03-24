@@ -13,6 +13,7 @@
 <div class="main-container">
 
   <div class="container">
+    <h1 class = "title">Here's a Calculator &darr;</h1>
     <div class="calculator">
         <form>
             <div class="display">
@@ -43,7 +44,7 @@
                 <input type="button" value="+" onclick="display.value += '+' " class="operator">
             </div>
             <div>
-                <input type="button" value="SV" onclick="output.value = display.value" id="save-button">
+                <input type="button" value="SV" onclick="output.value = display.value; onClickEvent();" id="save-button">
                 <input type="button" value="0" onclick="display.value += '0' ">
                 <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
             </div>
@@ -52,9 +53,9 @@
   </div>
 
   <div class="right-div">
-    <h2>Calculator</h2>
+    <h1 style = "font-family: arial black; background-color: #c53b3bcb; width: 300px; text-align: center; padding-top: 10px;">Project Info</h1>
     <div class="sidebar1">
-            <h3>Github</h3>
+            <h3 style="color: rgb(26, 26, 26)">Github</h3>
 
             <a href="https://github.com/rileyBreske/calc" target="_blank">
                 <img border="0" alt="Github" src="githublogo.svg" width="32">
@@ -64,8 +65,11 @@
     <div class="sidebar2 scroll">
             <h4>saved outputs:</h4>
             <input type="text" name="output" id="output"> <br>
-            <input type="button" value="clear" onclick="output.value = '' " class="sidebarButton" id="lookup-button">
             <input type="button" value="google" onclick="openGoogleSearch()" class="sidebarButton">
+            <input type="button" value="clear" onclick="output.value = '' " class="sidebarButton" id="lookup-button">
+            <br><br>
+            <h5>saved history:</h5>
+            <div class="saved-history" style="font-size: 10px; color:rgb(26, 26, 26)"></div>
     </div>
   </div>
 

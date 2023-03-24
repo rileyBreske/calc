@@ -5,9 +5,15 @@
   box-sizing: border-box;
 }
 
+.title {
+  text-align: center;
+  font: 1.3rem Inconsolata, monospace;
+}
+
 .main-container {
   display: flex;
 }
+
 .container{ /*container for the calculator*/
   width: 65%;
   height: 100vh;
@@ -15,12 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .calculator{
   background: #2e343d;
   padding: 20px;
   border-radius: 25px;
+  margin-top: 20px;
 }
 
 .calculator form input{
@@ -117,5 +125,5 @@ form .output {
 
 
 .sidebarButton:hover {
-  background-color: #2c3e50;
+  background-color: #c53b3bcb;
 }
