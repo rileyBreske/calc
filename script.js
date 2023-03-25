@@ -1,6 +1,10 @@
-
-// Get the number from the calculator
-
+/**
+ * Adds an event listener to the document that waits for the DOM to be fully loaded.
+ * Once the DOM is loaded, it retrieves the save button and display elements by their IDs.
+ * It then adds an event listener to the save button that logs the value of the display element to the console.
+ * @param None
+ * @returns None
+ */
 document.addEventListener("DOMContentLoaded", function() {
     const saveButton = document.getElementById("save-button");
     const display = document.getElementById("display");
@@ -10,8 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//
 
+/**
+ * Opens a new window with a Google search for the value in the 'output' element.
+ * @returns None
+ */
 function openGoogleSearch() {
     // Get the number from the calculator
     var number = output.value;
@@ -23,8 +30,12 @@ function openGoogleSearch() {
     window.open(url);
 }
 
-//
-
+/**
+ * Attaches an onClick event listener to all input elements on the page. When an input element is clicked,
+ * a new paragraph element is created and appended to the ".saved-history" element on the page. The innerText
+ * of the new paragraph element is set to the value of the "output" element on the page.
+ * @returns None
+ */
 function onClickEvent() {
     const el = document.createElement("p");
     el.innerText = output.value;
@@ -34,13 +45,15 @@ function onClickEvent() {
 document.querySelectorAll('input').onclick = onClickEvent;
 
 
+// nifty lil blinking downarrow || Credit: https://html-shark.com/HTML/Blinking.htm#:~:text=The%20other%20way%20of%20doing,the%20text%20returns%20to%20normal.
+
 function JavaBlink() {
     var blinks = document.getElementsByTagName('JavaBlink');
     for (var i = blinks.length - 1; i >= 0; i--) {
        var s = blinks[i];
        s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
     }
-    window.setTimeout(JavaBlink, 1000);
+    window.setTimeout(JavaBlink, 400);
  }
  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
