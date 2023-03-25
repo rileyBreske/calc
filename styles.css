@@ -1,7 +1,7 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,8 @@
   display: flex;
 }
 
-.container{ /*container for the calculator*/
+.container {
+  /*container for the calculator*/
   width: 65%;
   height: 100vh;
   background: #adadad;
@@ -24,20 +25,20 @@
   flex-direction: column;
 }
 
-.calculator{
+.calculator {
   background: #2e343d;
   padding: 20px;
   border-radius: 25px;
   margin-top: 20px;
 }
 
-.calculator form input{
+.calculator form input {
   border: 0;
   outline: 0;
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
   /*background: transparent;*/
   background-color: #1e2227;
   font-size: 25px;
@@ -52,54 +53,23 @@ form .display {
   margin: 20px 0;
 }
 
-form .display input{
+form .display input {
   text-align: right;
   flex: 1;
   font-size: 45px;
   box-shadow: none;
 }
 
-form input.equal{
+form input.equal {
   width: 145px;
 }
 
-form input.operator{
+form input.operator {
   color: #f5fdff;
   background-color: #52caeb38;
 }
 
-.right-div { /*container for the output to the right of the calculator*/
-  width: 35%;
-  height: 100vh;
-  background-color: #9b9b9b;
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.sidebar1{
-  background: #777777;
-  width: 70%;
-  border-radius: 5px;
-  padding: 25px 25px 25px;
-  text-align: center;
-}
-
-.sidebar2{
-  background: #777777;
-  width: 70%;
-  height: 20%;
-  border-radius: 5px;
-  padding: 20px 15px 5px;
-  margin-top: 20px;
-  overflow-y: scroll;
-  display: block;
-}
-
-form .output input{
+form .output input {
   text-align: right;
   flex: 1;
   font-size: 45px;
@@ -112,18 +82,148 @@ form .output {
   margin: 20px 0;
 }
 
+.right-div {
+  /*container for the output to the right of the calculator*/
+  width: 35%;
+  height: 100vh;
+  background-color: #9b9b9b;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar1 {
+  background: #777777;
+  width: 70%;
+  border-radius: 5px;
+  padding: 25px 25px 25px;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar2 {
+  background: #777777;
+  width: 70%;
+  height: 35%;
+  border-radius: 5px;
+  padding: 20px 15px 5px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  display: block;
+}
+
+.sidebar2 {
+  background-color: #777777;
+  width: 70%;
+  height: 35%;
+  border-radius: 5px;
+  padding: 20px 15px 5px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  display: block;
+}
+
+.output-field {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
 .sidebarButton {
-  color: #ffffff;
+  color: #fff;
   background-color: #1e2227;
   border: none;
   padding: 8px 25px;
   margin: 3px;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
 }
-
 
 .sidebarButton:hover {
   background-color: #c53b3bcb;
+}
+
+.projectInfo {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.projectInfo h4 {
+  padding-bottom: 15px;
+}
+
+.projectInfo:hover {
+  background-color: #919191;
+  cursor: pointer;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.sidebarContact {
+  width: 70%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar2 h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  background: #1e2227;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #c53b3bcb;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #dfdede;
 }
