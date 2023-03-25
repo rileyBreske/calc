@@ -45,7 +45,7 @@ function onClickEvent() {
 document.querySelectorAll('input').onclick = onClickEvent;
 
 
-// nifty lil blinking downarrow || Credit: https://html-shark.com/HTML/Blinking.htm#:~:text=The%20other%20way%20of%20doing,the%20text%20returns%20to%20normal.
+// nifty lil blinking downarrow || Credit: https://html-shark.com/HTML/Blinking.htm
 
 function JavaBlink() {
     var blinks = document.getElementsByTagName('JavaBlink');
