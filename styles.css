@@ -197,7 +197,7 @@ form .output {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 100%; 
   padding: 10px;
   border: none;
   border-radius: 3px;
@@ -206,6 +206,14 @@ form .output {
 
 .form-group textarea {
   resize: none;
+}
+
+.form-group input {
+  height: 50px;
+}
+
+.color-input input {
+  width: 50%;
 }
 
 button[type="submit"] {
@@ -224,6 +232,8 @@ button[type="submit"]:hover {
 
 input[type="text"],
 input[type="email"],
+input[type="date"],
+input[type="color"],
 textarea {
   background-color: #dfdede;
 }

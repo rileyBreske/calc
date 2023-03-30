@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-    <title>Contact</title>
+    <title>Calculator | Contact Me</title>
   </head>
   <body>
     <div class="main-container">
@@ -52,7 +52,7 @@
 
       <div class="right-div">
         <h1 style="font-family: arial black; background-color: #c53b3bcb; width: 300px; text-align: center; padding-top: 10px; border-radius: 3px">
-          Project Info
+          Useful Links
         </h1>
         <div class="sidebar1">
           <div class="projectInfo">
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="sidebar2 scroll sidebarContact">
-          <form action="https://getform.io/f/d4ca6e64-8a8a-4330-839f-53d89135ac4f" method="post">
+          <form action="https://getform.io/f/5bf33346-f78f-4810-b796-ec467b0b42da" method="post">
             <h4>Contact Me</h4>
             <div class="form-group">
               <input type="text" name="name" placeholder="Name" required />
@@ -83,6 +83,12 @@
             <div class="form-group">
               <input type="email" name="email" placeholder="Email" required />
             </div>
+            <div class="form-group">
+              <input type="date" id="date" name="date" min="2018-01-01" max="2035-12-31" required>
+            </div>
+            <div class="form-group color-input">
+              <input type="color" name="color" placeholder="Email" required />
+            </div>            
             <div class="form-group">
               <textarea name="message" placeholder="Message" rows="6" required></textarea>
             </div>
@@ -93,3 +99,6 @@
     </div>
   </body>
 </html>
+
+
+<!-- to do: add date picker in contact form to send the date -->
