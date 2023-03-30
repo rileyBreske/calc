@@ -37,8 +37,8 @@ function openGoogleSearch() {
  * @returns None
  */
 function onClickEvent() {
-    const el = document.createElement("p");
-    el.innerText = output.value;
+    const el = document.createElement("p"); //creates new paragraph tag
+    el.innerText = output.value; //fills new paragraph tag with output value from calculator
     document.querySelector('.saved-history').appendChild(el);
 }
 
@@ -46,7 +46,6 @@ document.querySelectorAll('input').onclick = onClickEvent;
 
 
 // nifty lil blinking downarrow || Credit: https://html-shark.com/HTML/Blinking.htm
-
 function JavaBlink() {
     var blinks = document.getElementsByTagName('JavaBlink');
     for (var i = blinks.length - 1; i >= 0; i--) {
