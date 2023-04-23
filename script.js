@@ -58,3 +58,30 @@ function JavaBlink() {
  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
  else window.onload = JavaBlink;
+
+
+
+ // Add event listener for keydown event on document object
+ document.addEventListener("keydown", function(event) {
+    // Get the key code from the event object
+    var key = event.key;
+
+    // If the key is a number or an operator, add it to the display value
+    if (/[0-9\+\-\*\/\.]/.test(key)) {
+      display.value += key;
+    }
+
+    // If the key is the backspace key, remove the last character from the display value
+    else if (key === "Backspace") {
+      display.value = display.value.slice(0, -1);
+    }
+
+    // If the key is the Enter key, evaluate the display value
+    else if (key === "Enter") {
+      display.value = eval(display.value);
+    }
+
+    else if (key==="Escape") {
+      display.value = '';
+    }
+  });
