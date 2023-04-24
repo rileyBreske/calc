@@ -60,8 +60,10 @@ function JavaBlink() {
  else window.onload = JavaBlink;
 
 
-
- // Add event listener for keydown event on document object
+/**
+ * adds an event listener to the document where key presses are detected and added to the
+ * @returns None
+ */
  document.addEventListener("keydown", function(event) {
     // Get the key code from the event object
     var key = event.key;
@@ -84,4 +86,28 @@ function JavaBlink() {
     else if (key==="Escape") {
       display.value = '';
     }
+
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const quizForm = document.getElementById('quiz-form');
+
+quizForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // prevent form submission
+
+  const answerKey = ['b', 'b', 'b', 'b', 'c']; // correct answers
+  let score = 0;
+
+  for (let i = 1; i <= 5; i++) {
+    const answer = quizForm[`q${i}`].value;
+
+    if (answer === answerKey[i-1]) {
+      score++;
+    }
+  }
+
+  const resultMessage = `You scored ${score} out of 5.`;
+  alert(resultMessage);
+});
+});
