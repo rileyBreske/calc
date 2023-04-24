@@ -78,8 +78,17 @@ document.addEventListener("keydown", function (event) {
   // If the key is the Enter key, evaluate the display value
   else if (key === "Enter") {
     display.value = eval(display.value);
-  } else if (key === "Escape") {
+  }
+
+  //if the key is the escape key it will clear the display value in the calculator
+  else if (key === "Escape") {
     display.value = "";
+  }
+
+  // If the key is the 's' key, execute the function
+  else if (key === "s") {
+    output.value = display.value;
+    onClickEvent();
   }
 });
 
@@ -102,7 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    const resultMessage = `You scored ${score} out of 5.`;
+    const percentScore = (score / 5) * 100; // converts score increment to percentage.
+
+    const resultMessage = `You scored ${percentScore}%`;
     alert(resultMessage);
   });
 });
